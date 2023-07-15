@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="calculator.css">
+
+<!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+
+  </head>
+  <body>
+  <div id="outer">
+    <div id="empty">
+      <input id="input">
+    </div>
+
+
+
+
+    <div class="row">
+      
+  <button class=" button  boxes  " value="AC" onclick="clearInput()">
+    <h1>AC</h1>
+  
+  <button class=" button  boxes  " value="C" onclick="clear1()" >
+    <h1>C</h1>
+  <button class=" button  boxes  "  value="%"onclick="appendOperator('%')">
+    <h1>%</h1>
+  
+  
+  <button class=" button  boxes  red"  value="/"onclick="appendOperator('/')">
+    <h1>/</h1>
+  
+</div>
+
+  
+
+
+
+<div class="row">
+  <button class=" button  boxes  " value="7"  onclick="appendNumber('7')">
+    <h1>7</h1>
+
+  
+  <button class=" button  boxes  " value="8"  onclick="appendNumber('8')">
+    <h1>8</h1>
+  
+
+  <button class=" button  boxes  " value="9"  onclick="appendNumber('9')">
+    <h1>9</h1>
+  
+  
+  <button class=" button  boxes  red" value="*" onclick="appendOperator('*')">
+    <h1>*</h1>
+  
+</div>
+
+
+
+  <div class="row">
+  <button class=" button  boxes  "  value="4"  onclick="appendNumber('4')">
+    <h1>4</h1>
+  
+  
+  <button class=" button  boxes  " value="5" onclick="appendNumber('5')" >
+    <h1>5</h1>
+  
+  
+  <button class=" button  boxes  " value="6"  onclick="appendNumber('6')">
+    <h1>6</h1>
+  
+  
+  <button class=" button  boxes  red" value="-" onclick="appendOperator('-')" >
+    <h1>-</h1>
+  
+  
+</div>
+
+
+  
+  <div class="row">
+    
+  <button class=" button  boxes  "  value="1" onclick="appendNumber('1')">
+    <h1>1</h1>
+  
+  <button class=" button  boxes  "  value="2" onclick="appendNumber('2')">
+    <h1>2</h1>
+  
+  
+  <button class=" button  boxes  " value="3"  onclick="appendNumber('3')">
+    <h1>3</h1>
+  
+  
+  <button class=" button  boxes  red" value="+" onclick="appendOperator('+')">
+    <h1>+</h1>
+  
+  
+</div>
+
+
+
+  
+  <div class="row">
+  <button class=" button  boxes " id="hello" value="0" onclick="appendNumber('0')">
+    <h1>0</h1>
+  
+  
+  <button class=" button  boxes  " value="." onclick="appendNumber('.')">
+    <h1>.</h1>
+  
+  
+  <button class=" button  boxes  red"  value="=" onclick="calculate()">
+    <h1>=</h1>
+  
+  
+  
+  </div>
+  <script  src="calculator.js"></script>
+  </body>
+</html>
